@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   #root "application#hello" # Look for a method called hello in the application_controller.rb file, if it is only "application" then it will look for the index method.
 
   root 'pages#home' # Look for a method called home in the pages_controller.rb file
+
+  # Defines the about path route ("/about")
+  get 'about', to: 'pages#about' # Look for a method called about in the pages_controller.rb file
 end
